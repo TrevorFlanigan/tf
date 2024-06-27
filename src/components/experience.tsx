@@ -202,25 +202,37 @@ const Experience = (props: ExperienceProps) => {
                       title: small ? "" : "Tesla",
                       icon: Tesla,
                       variant: company === Company.Tesla ? "default" : "ghost",
-                      onClick: () => setCompany(Company.Tesla),
+                      onClick: (e) => {
+                        e.preventDefault();
+                        setCompany(Company.Tesla);
+                      },
                     },
                     {
                       title: small ? "" : "Arista Networks",
                       icon: Arista,
                       variant: company === Company.Arista ? "default" : "ghost",
-                      onClick: () => setCompany(Company.Arista),
+                      onClick: (e) => {
+                        e.preventDefault();
+                        setCompany(Company.Arista);
+                      },
                     },
                     {
                       title: small ? "" : "UBC aws cloud innovation center",
                       icon: resolvedTheme === "dark" ? UBCDark : UBCLight,
                       variant: company === Company.UBC ? "default" : "ghost",
-                      onClick: () => setCompany(Company.UBC),
+                      onClick: (e) => {
+                        e.preventDefault();
+                        setCompany(Company.UBC);
+                      },
                     },
                     {
                       title: small ? "" : "Gen Digital",
                       icon: Gen,
                       variant: company === Company.Gen ? "default" : "ghost",
-                      onClick: () => setCompany(Company.Gen),
+                      onClick: (e) => {
+                        e.preventDefault();
+                        setCompany(Company.Gen);
+                      },
                     },
                   ]}
                 />
@@ -261,25 +273,37 @@ const Experience = (props: ExperienceProps) => {
                     title: small ? "" : "Tesla",
                     icon: Tesla,
                     variant: company === Company.Tesla ? "default" : "ghost",
-                    onClick: () => setCompany(Company.Tesla),
+                    onClick: (e) => {
+                      e.preventDefault();
+                      setCompany(Company.Tesla);
+                    },
                   },
                   {
                     title: small ? "" : "Arista Networks",
                     icon: Arista,
                     variant: company === Company.Arista ? "default" : "ghost",
-                    onClick: () => setCompany(Company.Arista),
+                    onClick: (e) => {
+                      e.preventDefault();
+                      setCompany(Company.Arista);
+                    },
                   },
                   {
                     title: small ? "" : "UBC",
                     icon: resolvedTheme === "dark" ? UBCDark : UBCLight,
                     variant: company === Company.UBC ? "default" : "ghost",
-                    onClick: () => setCompany(Company.UBC),
+                    onClick: (e) => {
+                      e.preventDefault();
+                      setCompany(Company.UBC);
+                    },
                   },
                   {
                     title: small ? "" : "Gen Digital",
                     icon: Gen,
                     variant: company === Company.Gen ? "default" : "ghost",
-                    onClick: () => setCompany(Company.Gen),
+                    onClick: (e) => {
+                      e.preventDefault();
+                      setCompany(Company.Gen);
+                    },
                   },
                 ]}
               />

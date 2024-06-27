@@ -60,19 +60,28 @@ const ExperienceBody = (props: ExperienceBodyProps) => {
       </h3>
       <h3 className="text-xs sm:text-sm md:text-md lg:text-lg">context</h3>
       {props.context.map((item) => (
-        <p className="font-light text-xs sm:text-sm md:text-md lg:text-lg">
+        <p
+          key={item}
+          className="font-light text-xs sm:text-sm md:text-md lg:text-lg"
+        >
           • {item}
         </p>
       ))}
       <h3 className="text-xs sm:text-sm md:text-md lg:text-lg">technical</h3>
       {props.technical.map((item) => (
-        <p className="font-light text-xs sm:text-sm md:text-md lg:text-lg">
+        <p
+          key={item}
+          className="font-light text-xs sm:text-sm md:text-md lg:text-lg"
+        >
           • {item}
         </p>
       ))}
       <h3 className="text-xs sm:text-sm md:text-md lg:text-lg">impact</h3>
       {props.impact.map((item) => (
-        <p className="font-light text-xs sm:text-sm md:text-md lg:text-lg">
+        <p
+          key={item}
+          className="font-light text-xs sm:text-sm md:text-md lg:text-lg"
+        >
           • {item}
         </p>
       ))}

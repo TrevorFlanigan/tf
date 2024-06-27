@@ -18,7 +18,7 @@ export function Navbar() {
   return (
     <NavigationMenu
       className={cn(
-        `lowercase max-w-[2000px] fixed top-0 left-0 right-0 h-16 z-50 transition-transform translate-y-0`,
+        `lowercase max-w-7xl fixed top-0 w-full h-16 z-50 transition-transform translate-y-0`,
         { "-translate-y-16": !pinned }
       )}
     >

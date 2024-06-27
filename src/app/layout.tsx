@@ -23,6 +23,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <body
           className={cn(
             "mb-5 lowercase min-h-screen bg-background font-sans font-bold antialiased flex flex-col items-center mx-auto max-w-[2000px]",
+            "max-w-7xl",
             fontSans.variable
           )}
         >

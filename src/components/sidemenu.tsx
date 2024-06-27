@@ -5,13 +5,14 @@ import { LucideIcon } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "./ui/button";
+import { MouseEventHandler } from "react";
 
 interface NavProps {
   orientation?: "vertical" | "horizontal";
   links: {
     title: string;
     label?: string;
-    onClick?: () => void;
+    onClick?: MouseEventHandler<HTMLAnchorElement>;
     icon: LucideIcon | (() => JSX.Element);
     variant: "default" | "ghost";
   }[];
