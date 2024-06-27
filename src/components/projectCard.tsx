@@ -7,29 +7,46 @@ import {
   CardContent,
   CardFooter,
 } from "./ui/card";
+import { ReactNode } from "react";
+import { Badge } from "./ui/badge";
 
-const ProjectCard = () => {
+export type ProjectType = {
+  title: string;
+  description: string;
+  img?: string;
+  imgClassName?: string;
+  links?: ReactNode[];
+  tags?: string[];
+};
+
+const ProjectCard = ({
+  title,
+  description,
+  img,
+  imgClassName,
+  links,
+  tags,
+}: ProjectType) => {
   return (
-    <Card className="w-[350px] rounded-lg border">
-      <CardHeader>
-        <CardTitle>Create project</CardTitle>
-        <CardDescription>Deploy your new project in one-click.</CardDescription>
-      </CardHeader>
-      <CardContent>
-        <form>
-          <div className="grid w-full items-center gap-4">
-            <div className="flex flex-col space-y-1.5">
-              <label htmlFor="name">Name</label>
-              <Input id="name" placeholder="Name of your project" />
+    <div className="w-[350px] flex flex-col">
+      <Card className="w-[350px] flex flex-col rounded-lg border justify-evenly">
+        <CardHeader>
+          <CardTitle>{title}</CardTitle>
+          <CardDescription>{description}</CardDescription>
+        </CardHeader>
+        <CardContent>
+          {img && <img className={imgClassName} src={img} alt={description} />}
+          {tags && (
+            <div className="flex mt-4 gap-2 justify-end">
+              {tags?.map((tag) => (
+                <Badge>{tag}</Badge>
+              ))}
             </div>
-          </div>
-        </form>
-      </CardContent>
-      <CardFooter className="flex justify-between">
-        <Button variant="outline">Cancel</Button>
-        <Button>Deploy</Button>
-      </CardFooter>
-    </Card>
+          )}
+        </CardContent>
+        <CardFooter className="flex gap-2 justify-end">{links}</CardFooter>
+      </Card>
+    </div>
   );
 };
 
