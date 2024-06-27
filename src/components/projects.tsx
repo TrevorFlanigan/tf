@@ -8,6 +8,8 @@ import firstResponder from "../assets/firstresponder1.jpg";
 import meetablePhones from "../assets/meetable_phones.png";
 import neeshPhonesDark from "../assets/neesh_phones_dark.jpg";
 import neeshPhonesLight from "../assets/neesh_phones_light.jpg";
+import meetablePhonesDark from "../assets/meetable_phones_dark.jpg";
+import meetablePhonesLight from "../assets/meetable_phones_light.jpg";
 import storyshareDark from "../assets/storyshare-dark.jpg";
 import storyshareLight from "../assets/storyshare-light.jpg";
 import ProjectCard, { ProjectType } from "./projectCard";
@@ -70,7 +72,7 @@ const Projects = (props: ProjectsProps) => {
     {
       title: "Meetable",
       description: "A mobile app for reconnecting UBC students after COVID-19",
-      img: meetablePhones,
+      img: resolvedTheme === "dark" ? meetablePhonesDark : meetablePhonesLight,
       tags: ["typescript", "react native", "aws"],
     },
     {

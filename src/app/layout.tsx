@@ -19,7 +19,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <ViewTransitions>
       <html lang="en" suppressHydrationWarning>
-        <head />
+        <head>
+          <title>tf</title>
+        </head>
         <body
           className={cn(
             "mb-5 lowercase min-h-screen bg-background font-sans font-bold antialiased flex flex-col items-center mx-auto max-w-[2000px]",
