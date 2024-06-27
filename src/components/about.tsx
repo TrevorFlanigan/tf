@@ -11,8 +11,8 @@ const About = (props: AboutProps) => {
         Hi 👋 I&apos;m Trevor - a curiosity-driven computer engineer with
         professional experience in React, Golang, Node, AWS, and more. I like to
         make stuff that is impactful, on projects where I can have a ton of
-        ownership from end to end. I&apos;m a life-long learner, and I'm always
-        looking for ways to apply and build upon my experience.
+        ownership from end to end. I&apos;m a life-long learner, and I&apos;m
+        always looking for ways to apply and build upon my experience.
       </p>
     </div>
   );
