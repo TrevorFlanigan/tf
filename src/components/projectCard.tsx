@@ -35,7 +35,7 @@ const ProjectCard = ({
           <CardTitle>{title}</CardTitle>
           <CardDescription>{description}</CardDescription>
         </CardHeader>
-        <CardContent>
+        <CardContent className="items-center flex flex-col">
           {img && (
             <Image className={imgClassName} src={img} alt={description} />
           )}
