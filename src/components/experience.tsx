@@ -100,8 +100,8 @@ const EXPERIENCES: ExperienceMap = {
   [Company.Tesla]: {
     jobTitle: "Software Engineer",
     company: "Tesla",
-    startDate: new Date("August 2023"),
-    endDate: new Date("July 2024"),
+    startDate: new Date("2023-08-01T00:00:00-08:00"),
+    endDate: new Date("2024-07-01T00:00:00-08:00"),
     context: [
       "Tesla Track team - in-house timekeeping system",
       "Focused on development of timekeeping device management platform and mobile application",
@@ -119,8 +119,8 @@ const EXPERIENCES: ExperienceMap = {
   [Company.Arista]: {
     jobTitle: "Software Engineer Intern",
     company: "Arista Networks",
-    startDate: new Date("May 2022"),
-    endDate: new Date("September 2022"),
+    startDate: new Date("2022-05-01T00:00:00-08:00"),
+    endDate: new Date("2022-09-01T00:00:00-08:00"),
     context: ["CloudVision Platform team - network management software"],
     technical: [
       "Built internal tools in Go, Python and TypeScript to increase developer productivity",
@@ -136,8 +136,8 @@ const EXPERIENCES: ExperienceMap = {
   [Company.UBC]: {
     jobTitle: "Student Developer → Student Mentor",
     company: "UBC aws cloud innovation center",
-    startDate: new Date("Jan 2021"),
-    endDate: new Date("April 2022"),
+    startDate: new Date("2021-01-01T00:00:00-08:00"),
+    endDate: new Date("2022-04-01T00:00:00-08:00"),
     context: [
       "Developer turned mentor for the UBC Cloud Innovation Centre",
       "Built prototypes for Canadian Health and Wellness companies, powered by AWS",
@@ -156,8 +156,8 @@ const EXPERIENCES: ExperienceMap = {
   [Company.Gen]: {
     jobTitle: "Software Engineer Intern",
     company: "Gen Digital",
-    startDate: new Date("April 2020"),
-    endDate: new Date("December 2020"),
+    startDate: new Date("2020-04-01T00:00:00-08:00"),
+    endDate: new Date("2020-12-01T00:00:00-08:00"),
     context: [
       "canadian fintech startup focusing on digital identity",
       "researched and developed with experimental technologies",

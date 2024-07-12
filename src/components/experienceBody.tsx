@@ -31,6 +31,8 @@ function calculateDateDifference(
 
 const ExperienceBody = (props: ExperienceBodyProps) => {
   const getDateRange = (startDate: Date, endDate?: Date) => {
+    console.log(startDate, endDate);
+
     return (
       Intl.DateTimeFormat("en-US", {
         month: "long",
